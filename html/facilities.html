@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Facilities</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+
+      .tab-container {
+        display: flex;
+        background-color: #333;
+        border-radius: 5px;
+        margin: 20px 0;
+      }
+
+      .tab {
+        flex: 1;
+        text-align: center;
+        padding: 15px 0;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .tab:hover {
+        background-color: #555;
+      }
+
+      .tab-content {
+        display: none;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .tab-content.active {
+        display: block;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+    
+      .facility-description {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .classroom-list {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .classroom-list li {
+        margin: 5px 0;
+        list-style-type: disc;
+      }
+
+      .room-details {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .room-details h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        color: #333;
+      }
+
+      .faculty-in-charge {
+        color: red;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      h2,
+      h3 {
+        color: #333;
+      }
+
+      p {
+        color: #333;
+      }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      function openTab(tabName) {
+        var i, tabContent, tab;
+        tabContent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabContent.length; i++) {
+          tabContent[i].style.display = "none";
+        }
+        tab = document.getElementById(tabName);
+        tab.style.display = "block";
+        tab.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Facilities</h1>
+
+    <div class="tab-container">
+      <div class="tab" onclick="openTab('general-facilities')">
+        General Facilities
+      </div>
+      <div class="tab" onclick="openTab('lab-facilities')">Lab Facilities</div>
+      <div class="tab" onclick="openTab('industry-support')">
+        Industry Support Lab Facilities
+      </div>
+      <div class="tab" onclick="openTab('department-library')">
+        Department Library
+      </div>
+    </div>
+
+    <div class="tab-content" id="general-facilities">
+      <h2>General Facilities</h2>
+      <p class="facility-description">
+        The department has well-furnished classrooms and seminar rooms to
+        facilitate learning, discussions, and outcome-oriented learning. The
+        specially designed classrooms are equipped with audiovisual aids,
+        including sound systems and LCD projectors, and offer internet
+        connectivity (Wi-Fi) to enhance the learning process. The classrooms
+        provide a very conducive environment for effective learning and
+        classroom interaction, with the objective of providing students a
+        hands-on experience and the right ambiance to stimulate learning.
+      </p>
+
+      <h3>List of Classrooms</h3>
+      <ul class="classroom-list">
+        <li>L601 - 6th Floor - Dedicated classroom for UG 2nd year class</li>
+        <li>L602 - 6th Floor - Dedicated classroom for UG 3rd year class</li>
+        <li>
+          L304 - 3rd Floor - Classroom for UG final year class (on sharing basis
+          with E&E dept)
+        </li>
+        <li>L603 - 6th Floor - Dedicated classroom for PG 1st year class</li>
+      </ul>
+
+      <h3>Conference Room</h3>
+      <p class="room-details">
+        The Department Conference Room is equipped with an LCD projector and
+        teleconferencing facilities. It is used for conducting classes,
+        presentations, webinars, and teleconferences.
+      </p>
+
+      <h3>Seminar Hall</h3>
+      <p class="room-details">
+        The modern and spacious seminar hall is equipped with a ceiling-mounted
+        LCD projector, wireless audio/video system, and Wi-Fi access. The room
+        can comfortably seat more than 125 people and is used for conducting
+        classes, seminars, and distinguished lectures.
+      </p>
+    </div>
+
+    <div class="tab-content" id="lab-facilities">
+      <h2>Lab Facilities</h2>
+      <p class="facility-description">
+        The department's laboratory setup provides excellent facilities to cater
+        to the various needs of B.Tech(AI), B.Tech(IT), M.Tech(IT),
+        M.Tech(Research) students & Ph.D Scholars. The department has several
+        labs for general programming language laboratory courses for UG and
+        dedicated labs for courses like Data Processing, Internet Technology,
+        and System Software. PG students and Research Scholars work in their own
+        dedicated labs equipped with high-end machines and other facilities.
+      </p>
+
+      <h3>State-of-the-Art Computing Facilities</h3>
+      <ul class="classroom-list">
+        <li>
+          213 High-end HP and Dell desktop systems, with i7 Processor and 16 GB
+          RAM
+        </li>
+        <li>65 High-end HP desktop systems, with i7 Processor and 32 GB RAM</li>
+        <li>1 Lenovo Workstation with Xeon Processor and 8 GB RAM</li>
+        <li>31 Dell Desktop Systems with i7 processor and 8 GB RAM</li>
+        <li>
+          2 CUDA-based servers for High-Performance Computing – Dell Power Edge
+          R730XD
+        </li>
+        <li>1 Dell Power Edge R540 Server</li>
+        <li>
+          1 Tyrone Camarero Server and 1 NVIDIA DGX Station for High-Performance
+          computing
+        </li>
+        <li>
+          2D and 3D camcorders for High-Performance Multimedia Lab and
+          Applications
+        </li>
+        <li>
+          Microsoft Kinect for Xbox 360 for Human-Computer Interaction
+          Applications
+        </li>
+        <li>
+          MEMSIC Wireless Sensor Network Professional and Educational Kits
+        </li>
+        <li>Microprocessor and Interfacing Kits for hands-on experiments</li>
+      </ul>
+
+      <h3>Details of Laboratories</h3>
+      <ul class="classroom-list">
+        <li>UG Laboratory 1 & 2</li>
+        <li>Digital Systems and Interfacing Laboratory 1 & 2</li>
+        <li>Project Laboratory</li>
+        <li>
+          PG Laboratory 1 & 2 - Dedicated and fully equipped lab for M.Tech
+          (I.T) students
+        </li>
+        <li>
+          Research Laboratory - Dedicated and fully equipped lab infrastructure
+          for full-time Research Scholars and M.Tech-R students
+        </li>
+        <li>Internet Technology Lab</li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="industry-support">
+      <h2>Industry Support Lab Facilities</h2>
+      <h3 class="room-details">
+        High Performance Computing Lab (partial contribution by Hewlett Packard
+        Enterprise - HPE)
+      </h3>
+      <p>
+        Faculty-in-charge:
+        <span class="faculty-in-charge"
+          >Dr. Sowmya Kamath S and Dr. Geetha V</span
+        >
+      </p>
+      <p>
+        Six servers and a switch were donated by HPE Bangalore for the use of
+        faculty and students for lab and research activities.
+      </p>
+
+      <h3 class="room-details">
+        IoT and Data Analytics Lab (in collaboration with RDL Technologies,
+        Mangalore)
+      </h3>
+      <p>
+        Faculty-in-charge:
+        <span class="faculty-in-charge"
+          >Dr. Geetha V and Dr. Sowmya Kamath S</span
+        >
+      </p>
+      <p>
+        40 Integrated IoT Development kits were donated by RDL, to be used for
+        lab experiments and student projects.
+      </p>
+    </div>
+
+    <div class="tab-content" id="department-library">
+      <h2>Department Library</h2>
+      <p class="facility-description">
+        The department has its own library offering reference books for all
+        subjects and areas of Information Technology. A comprehensive Library
+        Information System was developed in-house by our PG students to provide
+        search and discovery functionalities for the library's various
+        resources. The LIS makes it easy to find and access available and issued
+        textbooks, seminar reports, UG/PG/PhD Theses, technical videos & also
+        current status of all material available, along with an automated issue,
+        due alerts, and account management system. Books are issued to students
+        on a 15-day loan basis, and the books issued are actively managed using
+        a reservation system provided by the LIS to ensure book availability.
+      </p>
+
+      <h3>Department Library Details</h3>
+      <ul class="classroom-list">
+        <li><strong>Location:</strong> Room 504, 5th Floor, IT Building</li>
+        <li><strong>Timings:</strong> Every Wednesday, from 4 - 5 PM</li>
+        <li><strong>Phone:</strong> (0824) 2473588</li>
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:nitkitlis@gmail.com">nitkitlis@gmail.com</a>
+        </li>
+        <li>
+          <strong>LIS Access Point (Intranet only):</strong> IT library on NITK
+          intranet
+        </li>
+        <li><strong>Faculty-in-charge:</strong> Sowmya Kamath S</li>
+        <li><strong>Librarian:</strong> Mallika P</li>
+      </ul>
+    </div>
+  </body>
+</html>

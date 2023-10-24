@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Information</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(to bottom, #2980b9, #2c3e50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .contact-info {
+        background-color: #fff;
+        color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        animation: fadeIn 1s ease;
+        max-width: 400px;
+      }
+
+      .contact-info h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .contact-info img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 2px solid #333;
+      }
+
+      .contact-info p {
+        margin: 10px 0;
+        font-size: 16px;
+      }
+
+      .contact-info a {
+        text-decoration: none;
+        color: #2980b9;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .contact-info a:hover {
+        color: #2c3e50;
+      }
+
+      .contact-info .suggestions-link {
+        margin-top: 20px;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contact-info">
+      <h1><img src="/gallery/hod.jpg" alt="HOD Photo" /> Jaidhar C D</h1>
+      <p>Head of the Department</p>
+      <p>Department of Information Technology</p>
+      <p>IT Building, Western Campus</p>
+      <p>NITK Surathkal, P.O. Srinivasnagar</p>
+      <p>Mangalore - 575025 Karnataka, India.</p>
+      <p>Phone: +91-824-2474056</p>
+      <p>Fax: +91-824-2474082</p>
+      <p>Email: <a href="mailto:hodit@nitk.edu.in">hodit@nitk.edu.in</a></p>
+      <p class="suggestions-link">
+        Any suggestions? <a href="form_index.html">Click here</a>
+      </p>
+    </div>
+  </body>
+</html>
